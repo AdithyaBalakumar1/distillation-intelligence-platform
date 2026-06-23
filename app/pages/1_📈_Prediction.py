@@ -2,15 +2,89 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
+st.markdown("""
+<style>
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0F172A,
+        #111827,
+        #1E293B
+    );
+}
+
+.block-container {
+    padding-top: 2rem;
+}
+
+.big-header {
+    font-size: 48px;
+    font-weight: 800;
+    color: #38BDF8;
+}
+
+.subtitle {
+    color: #CBD5E1;
+    font-size: 18px;
+}
+
+.glass-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+</style>
+""", unsafe_allow_html=True)
 st.set_page_config(
     page_title="Physics-SEI Prediction Engine",
     layout="wide"
 )
 
-st.title("🧠 Physics-SEI Prediction Engine")
+st.markdown("""
+<div class="glass-card">
+
+<p class="big-header">
+🧠 Physics-SEI Prediction Engine
+</p>
+
+<p class="subtitle">
+Physics-Informed Digital Twin for Distillation Analytics
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 st.caption("Digital Twin Based Distillation Performance Prediction")
 
 st.subheader("⚙️ Operating Conditions")
+st.success("""
+### Current Digital Twin Status
+
+🟢 Process Stable
+
+📈 Predicted Efficiency: 87%
+
+🎯 Operating State: State 3
+
+⚠️ Anomaly Risk: Low
+""")
+st.markdown("""
+### Process Intelligence Workflow
+
+Plant Data
+⬇️
+Physics Features
+⬇️
+AI Prediction
+⬇️
+Optimization
+⬇️
+Digital Twin
+⬇️
+Decision Support
+""")
 
 col1, col2, col3, col4 = st.columns(4)
 
