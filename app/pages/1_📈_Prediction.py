@@ -43,10 +43,10 @@ st.subheader(
 col1,col2,col3,col4 = st.columns(4)
 
 with col1:
-FlowC1 = st.number_input(
-"FlowC1",
-value=235.73
-)
+    FlowC1 = st.number_input(
+        "FlowC1",
+        value=235.73
+    )
 
 ```
 FlowC2 = st.number_input(
